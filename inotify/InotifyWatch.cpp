@@ -16,7 +16,7 @@ InotifyWatch::~InotifyWatch(){
 	if(r == -1){
 		char errstr[INOTIFY_ERR_LEN];
 		INOTIFY_ERR_MSG("inotify_rm_watch", errstr, INOTIFY_ERR_LEN);
-		throw InotifyException(errstr);
+		//throw InotifyException(errstr);
 	}
 }
 
